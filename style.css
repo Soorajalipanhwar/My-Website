@@ -130,6 +130,7 @@ a{
     position: relative;
     width: 32vw;
     height: 32vw;
+    /* background-color: red; */
     border-radius: 50%;
     padding: 5px;
     display: flex;
@@ -244,6 +245,7 @@ a{
     width: 100%;
     height: 100%;
     background: #1f242d;
+    /* border: 2px solid red; */
     transform: translateY(-100%);
     animation: barAnim 0.5s ease-in-out forwards;
     animation-delay: calc(0.1s * var(--i));
@@ -361,9 +363,10 @@ nav ul li{
     margin-top: 50px;
 }
 
-.icons{
+.icons{ /*this is my code*/
     width: 70px;
     height: auto;
+    /* margin-bottom: 10px; */
 }
 
 .services-list div{
@@ -561,20 +564,20 @@ form .btn-2{
     .OpenIcon{
         display: flex;
         position: fixed;
-        right: 0;
-        width: 50px;
+        left: 0;
+        width: 30px;
         border-radius: 20%;
-        height: 50px;
-        margin-top: 5px;
-        margin-right: 10px;
-        background-color: #e6eae437;
+        height: 30px;
+        margin-top: 16px;
+        margin-left: 20px;
         z-index: 100;     
     }
     #currentmenu{
         display: flex;
         position:fixed;
-        top: 60px;
-        right: 15px;
+        font-family:'Courier New', Courier, monospace;
+        margin-top: 5px;
+        margin-left: 30px;
         color: rgba(172, 255, 47, 0.473);
     }
     .navbar .ico{
@@ -588,30 +591,30 @@ form .btn-2{
     }
     .navbar ul{
         display: inline;
-        background-color: #ff004f;
+        background-color: #ff004fa1;
         position: fixed;
         top: 0;
-        right: -200px;
-        width: 200px;
+        left: -200px;
+        width: 150px;
         height: 120vh;
-        padding-top: 50px;
+        padding-top: 0px;
         z-index: 200;
-        transition: right 0.5s ease;
+        transition: 0.7s ease;
     }
     .navbar ul div{
-        margin-top: 60px;
+        margin-top: 10px;
     }
     .CloseIcon{
         display: block;
         width: 50px;
         height: 50px;
-        margin-top: 60px;
-        margin-left: 70px;
+        margin-top: 5px;
+        margin-left: 15px;
     }
     .navbar ul li{
         display: block;
         margin-top: 0px;
-        margin-left: 65px;
+        margin-left: 15px;
     }
     .cv-btn-wrapper{
         display: flex;
@@ -694,8 +697,8 @@ form .btn-2{
 }
 #msg{
     color: #61b752;
-    margin-top: -20px;
-    margin-left: 30px;
+    margin-top: 0px;
+    margin-left: 50px;
     display: block;
-
+    z-index: 250;
 }

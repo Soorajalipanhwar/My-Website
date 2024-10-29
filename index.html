@@ -10,7 +10,7 @@
   <!-- -----------------------------homePage------------------------------------- -->
   <nav class="navbar">
     <ul id="sidemenu" class="sidemenu">
-        <a onclick="closemenu()"><img class="CloseIcon"  src="assets/cross.png"></a>
+        <a onclick="closemenu()"><img class="CloseIcon"  src="assets/close.png"></a>
         <div>
         <li><a href="#homepage"      class="nav-items active-item" id="home">Home</a></li>
         <li><a href="#aboutpage"     class="nav-items"             id="about">About</a></li>
@@ -19,7 +19,7 @@
         </div>
     </ul>
 </nav>
-<a class="OpenIcon" id="openiconid" onclick="openmenu()"><img src="assets/openMenu icon.png"><i id="currentmenu">menu</i></a>
+<a class="OpenIcon" id="openiconid" onclick="openmenu()"><img src="assets/open.png"><i id="currentmenu">menu</i></a>
 
 
 
@@ -255,7 +255,7 @@
                         <textarea name="Message" rows="6" placeholder="write message" id=""></textarea>
                         <button type="submit" class="btn btn-2">submit</button>
                     </form>
-                    <span id="msg"></span>
+                    <span id="msg">message sent successfully</span>
                 </div>
             </div>
         </div>
@@ -284,16 +284,15 @@
    const side = document.getElementsByClassName('sidemenu');
    const icon = document.getElementById('openiconid');
    function openmenu(){
-    sidemenu.style.right = '0';
+    sidemenu.style.left = '0';
     // side.style.right = '0';
     console.log(icon.id);
     icon.style.display = 'none';
     
    }
    function closemenu(){
-    sidemenu.style.right = '-200px'
+    sidemenu.style.left = '-200px'
     icon.style.display = 'flex';
-    // side.style.right = '-200px';
    }
 </script>
 
