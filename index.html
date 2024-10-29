@@ -9,8 +9,8 @@
 <body>
   <!-- -----------------------------homePage------------------------------------- -->
   <nav class="navbar">
-    <ul class="sidemenu">
-        <a href="" onclick="closemenu"><img class="CloseIcon"  src="assets/cross.png"></a>
+    <ul id="sidemenu" class="sidemenu">
+        <a onclick="closemenu()"><img class="CloseIcon"  src="assets/cross.png"></a>
         <div>
         <li><a href="#homepage"      class="nav-items active-item" id="home">Home</a></li>
         <li><a href="#aboutpage"     class="nav-items"             id="about">About</a></li>
@@ -19,7 +19,10 @@
         </div>
     </ul>
 </nav>
-<a href="" class="OpenIcon" onclick="openmenu()"><img src="assets/openMenu icon.png"></a>
+<a class="OpenIcon" id="openiconid" onclick="openmenu()"><img src="assets/openMenu icon.png"><i id="currentmenu">menu</i></a>
+
+
+
 <div class="bars-wrapper">
     <div class="bar" style="--i: 6"></div>
     <div class="bar" style="--i: 6"></div>
@@ -277,26 +280,33 @@
 </script>
 
 <script> // script for sidemenu
-    var sidemenu = document.getElementById('sidemenu');
+   var sidemenu = document.getElementById('sidemenu');
+   const side = document.getElementsByClassName('sidemenu');
+   const icon = document.getElementById('openiconid');
+   function openmenu(){
+    sidemenu.style.right = '0';
+    // side.style.right = '0';
+    console.log(icon.id);
+    icon.style.display = 'none';
+    
+   }
+   function closemenu(){
+    sidemenu.style.right = '-200px'
+    icon.style.display = 'flex';
+    // side.style.right = '-200px';
+   }
+</script>
 
-    function openmenu(){
-        sidemenu.right ='1px';
-        alert('opened');
-    }
-    function closemenu(){
-        sidemenu.right ='-200px';
-        alert('closed');
-    }
-    function CopyText(text){
+<script> //script for the copy function
+ function CopyText(text){
         navigator.clipboard.writeText(text).then(() => {
         }).catch(err => {
     console.error("Failed to copy text:", err);
   });
-}
+  }
 </script>
 
-<script>
-    // Function to observe sections and highlight the corresponding nav item
+<script>// Function to observe sections and highlight the corresponding nav item
     const sections = document.querySelectorAll('section');
     const navItems = document.querySelectorAll('.nav-items');
     var variable;
@@ -314,6 +324,7 @@
                     item.classList.remove('active-item');
                 });
                 navItem.classList.add('active-item');
+                document.getElementById('currentmenu').innerHTML = navItem.id;
             }
         });
     }, {
@@ -337,12 +348,12 @@
       .then(response => {
         msg.innerHTML = "Message Sent Successfully"
         setTimeout(function (){
-            msg.innerHTML =""
+            msg.innerHTML ="";
         }, 5000)
       });
       form.reset()
       .catch(error => console.error('Error!', error.message))
-  })
+  });
 </script>
 
 </body>
