@@ -635,12 +635,12 @@ form .btn-2{
         left: 10%;
     }
     .img-wrapper{
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 2050px;
         margin-bottom: 5px;
     }
     .main-info{
-        padding-top: 270px;
+        padding-top: 170px;
     }
     .cv-btn-wrapper{
         display: flex;
