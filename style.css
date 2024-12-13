@@ -551,6 +551,10 @@ form .btn-2{
 .navbar{
     position:fixed;
 }
+.fw{
+    color: rgb(123, 123, 123);
+    font-style: normal;
+}
 
 /* ----------------media for the screen---------------- */
 @media only screen and (max-width: 600px) {
