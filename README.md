@@ -1,6 +1,6 @@
 # My-Website
 this is the repo of my personal website <br>
 
-[Visit my website](https://soorajalipanhwar.github.io/My-Website/)<br>
+[](https://soorajalipanhwar.github.io/My-Website/)<br>
 
-![website View](https://github.com/Soorajalipanhwar/My-Website/blob/main/assets/website.png)
+[https://github.com/Soorajalipanhwar/My-Website/blob/main/assets/website.png](https://soorajalipanhwar.github.io/My-Website/ "Website View")
