@@ -484,7 +484,7 @@ nav ul li {
   box-shadow: none;
 }
 #contact-heading .container:hover {
-  /* box-shadow: 0 0 5px var(--gray); */
+  box-shadow: 0 0 5px var(--gray);
 }
 .contact-main {
   width: 100%;
