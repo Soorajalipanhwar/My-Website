@@ -1,413 +1,612 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sooral Ali Panhwar Portfolio website</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- -----------------------------homePage------------------------------------- -->
-  <nav class="navbar">
-    <ul id="sidemenu" class="sidemenu">
-        <a onclick="closemenu()"><img class="CloseIcon"  src="assets/close.png"></a>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- -----------------------------homePage------------------------------------- -->
+    <nav class="navbar">
+      <ul id="sidemenu" class="sidemenu">
+        <a onclick="closemenu()"
+          ><img class="CloseIcon" src="assets/close.png"
+        /></a>
         <div>
-        <li><a href="#homepage"      class="nav-items active-item" id="home">Home</a></li>
-        <li><a href="#aboutpage"     class="nav-items"             id="about">About</a></li>
-        <li><a href="#portfoliopage" class="nav-items"             id="portfolio">Portfolio</a></li>
-        <li><a href="#contactpage"   class="nav-items"             id="contact">Contact</a></li>
+          <li>
+            <a href="#homepage" class="nav-items active-item" id="home">Home</a>
+          </li>
+          <li><a href="#aboutpage" class="nav-items" id="about">About</a></li>
+          <li>
+            <a href="#portfoliopage" class="nav-items" id="portfolio"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a href="#contactpage" class="nav-items" id="contact">Contact</a>
+          </li>
         </div>
-    </ul>
-</nav>
-<a class="OpenIcon" id="openiconid" onclick="openmenu()"><img src="assets/open.png"><i id="currentmenu">menu</i></a>
+      </ul>
+    </nav>
+    <a class="OpenIcon" id="openiconid" onclick="openmenu()"
+      ><img src="assets/open.png" /><i id="currentmenu">menu</i></a
+    >
 
+    <div class="bars-wrapper">
+      <div class="bar" style="--i: 6"></div>
+      <div class="bar" style="--i: 6"></div>
+      <div class="bar" style="--i: 6"></div>
+      <div class="bar" style="--i: 6"></div>
+      <div class="bar" style="--i: 6"></div>
+      <div class="bar" style="--i: 6"></div>
+    </div>
 
-
-<div class="bars-wrapper">
-    <div class="bar" style="--i: 6"></div>
-    <div class="bar" style="--i: 6"></div>
-    <div class="bar" style="--i: 6"></div>
-    <div class="bar" style="--i: 6"></div>
-    <div class="bar" style="--i: 6"></div>
-    <div class="bar" style="--i: 6"></div>
-    
-</div>
-
-<section id="homepage" class="section">
-    <div class="home">
+    <section id="homepage" class="section">
+      <div class="home">
         <div class="HomePage">
-            <div class="main-info">
-                <h1>Sooraj Ali</h1>
-                <h2>I am a
-                    <span style="--i: 1" data-text="Software Developer">Sofrware Developer</span>
-                    <span style="--i: 2" data-text="Web Developer">Web Developer</span>
-                    <span style="--i: 3" data-text="Programmer">Programmer</span>
-                </h2>
-                <p>Passionate about creating seamless digital experiences.
-                    From intuitive apps to innovative solutions,
-                    my work combines technical skill with creative
-                    thinking.
-                    <br>Explore my projects and feel free to reach out!</p>    
-                <div class="cv-btn-wrapper">
-                    <a href="assets/Sooraj Ali's CV.pdf" target="_blank"><button class="btn" >Download My CV</button></a>
-                    <div class="socials">
-                        <a href="linkedin.com/in/sooraj-ali-panhwar-936150224" target="_blank"><i><img src="assets/red linkdedin.png" alt=""></i></a>
-                        <a href="https://github.com/Soorajalipanhwar" target="_blank"><i><img src="assets/red Github.png" alt=""></i></a>
-                        <a href="https://www.instagram.com/sooraj_ali_panhwar/profilecard/?igsh=MnloM2o2M3ZsZ2Iy" target="_blank"><i><img src="assets/red insta.png" alt=""></i></a>
-                        <a href="https://www.facebook.com/sooraj.panhwar?mibextid=LtpnVJRhQoU8sPCp" target="_blank"><i><img src="assets/red facebook.png" alt=""></i></a>
-                        <a href="#" title="click to copy my number: +923030138977" onclick="CopyText('03030138977')"><i><img src="assets/red phone.png" alt=""></i></a>
-                        
-                    </div>
-                </div>
+          <div class="main-info">
+            <h1>Sooraj Ali</h1>
+            <h2>
+              I am a
+              <span style="--i: 1" data-text="Software Developer"
+                >Sofrware Developer</span
+              >
+              <span style="--i: 2" data-text="Web Developer"
+                >Web Developer</span
+              >
+              <span style="--i: 3" data-text="Programmer">Programmer</span>
+            </h2>
+            <p>
+              Passionate about creating seamless digital experiences. From
+              intuitive apps to innovative solutions, my work combines technical
+              skill with creative thinking. <br />Explore my projects and feel
+              free to reach out!
+            </p>
+            <div class="cv-btn-wrapper">
+              <a href="assets/Sooraj Ali's CV.pdf" target="_blank"
+                ><button class="btn">Download My CV</button></a
+              >
+              <div class="socials">
+                <a
+                  href="linkedin.com/in/sooraj-ali-panhwar-936150224"
+                  target="_blank"
+                  ><i><img src="assets/red linkdedin.png" alt="" /></i
+                ></a>
+                <a href="https://github.com/Soorajalipanhwar" target="_blank"
+                  ><i><img src="assets/red Github.png" alt="" /></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/sooraj_ali_panhwar/profilecard/?igsh=MnloM2o2M3ZsZ2Iy"
+                  target="_blank"
+                  ><i><img src="assets/red insta.png" alt="" /></i
+                ></a>
+                <a
+                  href="https://www.facebook.com/sooraj.panhwar?mibextid=LtpnVJRhQoU8sPCp"
+                  target="_blank"
+                  ><i><img src="assets/red facebook.png" alt="" /></i
+                ></a>
+                <a
+                  href="#"
+                  title="click to copy my number: +923030138977"
+                  onclick="CopyText('03030138977')"
+                  ><i><img src="assets/red phone.png" alt="" /></i
+                ></a>
+              </div>
             </div>
-            <div class="main-img">
-                <div class="img-wrapper">
-                    <div class="image">
-                        <img src="assets/new.png" alt="">
-                    </div>
-                </div>
+          </div>
+          <div class="main-img">
+            <div class="img-wrapper">
+              <div class="image">
+                <img src="assets/new.png" alt="" />
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</section>
-<!-- ----------------------------About-------------------------------------- -->
-<section id="aboutpage" class="section">
-    <div class="about">
+      </div>
+    </section>
+    <!-- ----------------------------About-------------------------------------- -->
+    <section id="aboutpage" class="section">
+      <div class="about">
         <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="assets/4.jpg" alt="This is me">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title" id="About">About Me</h1>
-                    <p id="about-text">As a software developer with a strong foundation
-                        in computer science, I thrive on solving complex coding challenges
-                        and building user-friendly applications. My journey is defined by
-                        hands-on experience, continual learning, and a commitment to staying
-                        current in tech.<a href="https://soorajalipanhwar.github.io/my_story/" target="_blank" style="color: greenyellow;">more</a></p>
-    
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('Skills')"    >Skills</p>
-                            <p class="tab-links"             onclick="opentab('Certifications')">Certifications</p>
-                            <p class="tab-links"             onclick="opentab('Education')" >Education</p>
-                        </div>
-                        <div class="tab-contents active-content" id="Skills">
-                            <ul>
-                                <li><span>Front-end</span><br>
-                                    HTML, CSS, JavaScript, BootStrap
-                                </li>
-                                <li><span>Back-end</span><br>
-                                    MS SQL Server & MySQL
-                                <li><span>Languages</span><br>
-                                    C++, C#, Java,<br>
-                                    PHP, Python</li>
-                            </ul>
-                            <div class="sidesection"><span>Frameworks and tools
-                            </span><ul>
-                                <li>.NET Framework <br> <i class="fw">(C# with SQL Server & ASP.NET )</i></li>
-                                <li>Flask <br> <i class="fw">(Python)</i></li>
-                                <li>CodeIgniter <br><i class="fw">(MySQL & PHP)</i></li>
-                                <li>Tesseract & TensorFlow <br> <i class="fw">(Machine Learning)</i></li>
-                                
-                            </ul></div>
-                        </div>
-                        <div class="tab-contents" id="Certifications">
-                            <ul>
-                                <li><span><a href="https://drive.google.com/file/d/1Nvczz89oYL3mLDv5KZ20NApst02MZ-Gz/view?usp=sharing" target="_blank">
-                                    Data Science with Python</a></span><br>
-                                    IT Bootcamp by IBA &nbsp;Sukkur University and Department of Science &nbsp; & &nbsp;Technology <br>
-                                    Government&nbsp;of&nbsp;Sindh <br>
-                                    <p>2023: 3 months</p>
-                                </li>
-                                <li><span><a href="https://coursera.org/share/311bc49596a4c39df7b840240cb7f2b8"target="_blank">Google IT Certificate</a>
-                                    </span><br>
-                                    Google IT Professional Certificate by Coursera
-                                    <br><p>2023: 6 months</p>
-                                </li>
-                                <li>
-                                    <span><a href="#">Computer Operator+ ICT + MS Office</a>
-                                    </span><br>
-                                    Sindh STEVTA: Vocational Training Centre Naudero, Larkana
-                                    <p>2018-2019: 12 months</p>
-                                </li>
-                                <!-- <li><span><a href="#">NFTP</a></span><br>National Freelancing Training Program, Nawabshah
-                                    <br><p>2021:3 months</p>
-                                </li> -->
-                                
-                                
-                                                                        
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="Education">
-                            <ul>
-                                <li><span>BS Computer Science</span>
-                                    <p>2020-2024</p>
-                                    <br>Quaid-E-Awam University of Engineering Science and Technology, Nawabshah
-                                    <br><p>CGPA: 3.67 / 4.0</p></li>
-                                <li><span>Intermediate</span>
-                                    <br><p>2017-2019</p>
-                                    <br>Govt: Boys Higher Secondary School Badah, Larkana</li>
-                            </ul>
-                        </div>
-                </div>
+          <div class="row">
+            <h1 id="About">About Me</h1>
+            <div class="about-col-1">
+              <img src="assets/4.jpg" alt="This is me" />
             </div>
-        </div>
-    </div>
-</section>
-<!-- ----------------------------Services-------------------------------------- -->
- <!-- <section id="servicespage" class="section">
-    <div id="Services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <img src="assets/code.png" alt="icons" class="icons">
-                    <h2>Web Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Consequuntur unde explicabo expedita beatae ipsam, necessitatibus
-                        obcaecati eaque suscipit ab, delectus doloremque, voluptates
-                        enim perspiciatis iste quisquam nobis sed repellendus molestiae.</p>
-                        <a href="#">Learn</a>
-                </div>
-                <div>
-                    <img src="assets/code.png" alt="icons" class="icons">
-                    <h2>App Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Consequuntur unde explicabo expedita beatae ipsam, necessitatibus
-                        obcaecati eaque suscipit ab, delectus doloremque, voluptates
-                        enim perspiciatis iste quisquam nobis sed repellendus molestiae.</p>
-                        <a href="#">Learn</a>
-                </div>
-                <div>
-                    <img src="assets/code.png" alt="icons" class="icons">
-                    <h2>More</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Consequuntur unde explicabo expedita beatae ipsam, necessitatibus
-                        obcaecati eaque suscipit ab, delectus doloremque, voluptates
-                        enim perspiciatis iste quisquam nobis sed repellendus molestiae.</p>
-                        <a href="#">Learn</a>
-                </div>
+            <div class="about-col-2">
+              <p id="about-text">
+                As a software developer with a strong foundation in computer
+                science, I thrive on solving complex coding challenges and
+                building user-friendly applications. My journey is defined by
+                hands-on experience, continual learning, and a commitment to
+                staying current in tech.
+                <a
+                  href="https://soorajalipanhwar.github.io/my_story/"
+                  target="_blank"
+                  style="color: greenyellow"
+                  >more</a
+                >
+              </p>
+              <div class="tab-titles">
+                <p class="tab-links">Education</p>
+              </div>
+              <div class="tab-contents" id="Education">
+                <ul>
+                  <li>
+                    <span>BS Computer Science</span>
+                    <p>2020-2024</p>
+                    <br />Quaid-E-Awam University of Engineering Science and
+                    Technology, Nawabshah <br />
+                    <p>CGPA: 3.67 / 4.0</p>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </div>
         </div>
-     </div>
- </section> -->
-<!-- ----------------------------Portfolio-------------------------------------- -->
-<section id="portfoliopage" class=" section">
-    <div id="Portfolio">
-        
+      </div>
+      <div class="Skills">
+        <h1>Skills</h1>
+
+        <div class="main">
+          <div class="skills-holder">
+            <div class="skill">
+              <div class="skill-layer">
+                <h4>SQL Server</h4>
+                <h3>SQL</h3>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-layer">
+                <h4>WinForms</h4>
+                <h3>C#</h3>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-layer">
+                <h4>ASP.NET Core</h4>
+                <h3>C#, MVC</h3>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-layer">
+                <h4>Web Development</h4>
+                <h3>HTML CSS JS ES6</h3>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-layer">
+                <h4>React</h4>
+                <h3>Js Node.js TS</h3>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-layer">
+                <h4>Data Science and ML</h4>
+                <h3>Python Flask</h3>
+              </div>
+            </div>
+          </div>
+
+          <h2>More</h2>
+          <p>
+            Besides this primary skill set, I also have good knowledge and have
+            worked on following:
+          </p>
+          <div class="more-skills">
+            <div>
+              <h4>Git</h4>
+            </div>
+            <div>
+              <h4>GitHub</h4>
+            </div>
+            <div>
+              <h4>CV2</h4>
+            </div>
+            <div>
+              <h4>tesseract</h4>
+            </div>
+            <div>
+              <h4>Tensorflow</h4>
+            </div>
+            <div>
+              <h4>PyGame</h4>
+            </div>
+            <div>
+              <h4>tkinter</h4>
+            </div>
+            <div>
+              <h4>Postman</h4>
+            </div>
+            <div>
+              <h4>Swagger</h4>
+            </div>
+            <div>
+              <h4>PHP</h4>
+            </div>
+            <div>
+              <h4>CodeIgniter</h4>
+            </div>
+            <div>
+              <h4>MySQL</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Certificates">
+        <div class="main">
+          <h1>Certificates</h1>
+          <div class="cert-holder">
+            <a
+              class="cert"
+              href="https://verifybootcamp.netlify.app/certificate/4320159590089"
+              target="_blank"
+            >
+              <p>Data Science with Python</p>
+              <div
+                class="cert-layer"
+                style="background-image: url('../../../../images/data.png')"
+              ></div>
+              &nbsp;
+            </a>
+            <a
+              class="cert"
+              href="https://www.sololearn.com/certificates/CC-A2AZRKWG"
+              target="_blank"
+            >
+              <p>SQL-Intermediate</p>
+              <div
+                class="cert-layer"
+                style="background-image: url('../../../../images/SQL.png')"
+              ></div>
+              &nbsp;
+            </a>
+            <a
+              class="cert"
+              href="https://www.sololearn.com/certificates/CC-HFT06IDL"
+              target="_blank"
+            >
+              <p>JavaScript</p>
+              <div
+                class="cert-layer"
+                style="
+                  background-image: url('../../../../images/JavaScript.png');
+                "
+              ></div>
+              &nbsp;
+            </a>
+            <a class="cert">
+              <p id="h">Web Development</p>
+              <div
+                class="cert-layer"
+                style="
+                  background-image: url('../../../../images/Web\ Development.png');
+                "
+              ></div>
+              &nbsp;
+            </a>
+          </div>
+          <h2 id="Google-h">Google IT professional Certificates</h2>
+          <p>(6 months)</p>
+          <div class="Google">
+            <a
+              class="card"
+              href="https://www.coursera.org/account/accomplishments/verify/6LV6GG84GBKH"
+              target="_blank"
+            >
+              <p>Networking</p>
+              <img src="../../../../images/IT-networking.png" alt="" />
+            </a>
+            <a
+              class="card"
+              href="https://www.coursera.org/account/accomplishments/verify/8LWSH3YQMDDJ"
+              target="_blank"
+            >
+              <p>OS-Power user</p>
+              <img src="../../../../images/IT-OS.png" alt="" />
+            </a>
+            <a
+              class="card"
+              href="https://www.coursera.org/account/accomplishments/verify/27VLPUNEGHM8"
+              target="_blank"
+            >
+              <p>Security</p>
+              <img src="../../../../images/IT-Security.png" alt="" />
+            </a>
+            <a
+              class="card"
+              href="https://www.coursera.org/account/accomplishments/verify/Q5ZLRJC24SYA"
+              target="_blank"
+            >
+              <p>Sys. Administration</p>
+              <img src="../../../../images/IT-SystemAdmin.png" alt="" />
+            </a>
+            <a
+              class="card"
+              href="https://www.coursera.org/account/accomplishments/verify/6VQWSZ89Z3Z2"
+              target="_blank"
+            >
+              <p>Tech Support</p>
+              <img src="../../../../images/IT-techSupport.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ----------------------------Portfolio-------------------------------------- -->
+    <section id="portfoliopage" class="section">
+      <div id="Portfolio">
         <div class="container">
-            <h1 class="sub-title" id="MyWork">My Work </h1>
-            
+          <h1 id="MyWork">My Work</h1>
+
+          <div class="work-list">
             <div class="work-list">
-
-                <div class="work-list">
-                    <div class="work">
-                        <img src="assets/OCR.jpeg" alt="Offline Urdu OCR" style="width: 300px;">
-                        <div class="layer">
-                            <h3>Offline Urdu OCR</h3>
-                            <p>This is just a Simple GUI application prototype of the Urdu OCR. 
-                                The project uses tesseract to extract the Urdu handwritten text
-                                from input images. <br>
-                                Visit my OCR repo on Github.
-                            </p>
-                            <a href="https://github.com/Soorajalipanhwar/My-Simple-Urdu-OCR-App.git" target="_blank"><img src="assets/Green Github.png" alt=""></a>
-                        </div>
-                    </div>
+              <div class="work">
+                <img src="assets/OCR.jpeg" alt="Offline Urdu OCR" />
+                <div class="layer">
+                  <h3>Offline Urdu OCR</h3>
+                  <p>
+                    This is just a Simple GUI application prototype of the Urdu
+                    OCR. The project uses tesseract to extract the Urdu
+                    handwritten text from input images. <br />
+                    Visit my OCR repo on Github.
+                  </p>
+                  <a
+                    href="https://github.com/Soorajalipanhwar/My-Simple-Urdu-OCR-App.git"
+                    target="_blank"
+                    ><img src="assets/Green Github.png" alt=""
+                  /></a>
                 </div>
-
-                <div class="work-list">
-                    <div class="work">
-                        <img src="assets/RMS.jpeg" alt="">
-                        <div class="layer">
-                            <h3>Restaurant Management System</h3>
-                            <p>This is a C# project for restaurant management 
-                                System with MS SQL Database. <br>
-                                Visit My RMS repo on Github
-                            </p>
-                            <a href="https://github.com/Soorajalipanhwar/Restaurant-Management-System.git" target="_blank"><img src="assets/Green Github.png" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="work-list">
-                    <div class="work">
-                        <img src="assets/page view.jpg  " alt="">
-                        <div class="layer">
-                            <h4>Sentiment Analysis With Python and Flask</h4>
-                            <p>My web app that performs the sentiment
-                               analysis on given text using python libraries <br>
-                            </p>
-                            <div class="links-holder">
-                                <a href="https://github.com/Soorajalipanhwar/Sentiment-Analysis-App-With-Python-Flask.git" target="_blank"><img src="assets/Green Github.png" alt=""></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <a id="hug" href="https://huggingface.co/spaces/SoorajAliPanhwar/Simple-Sentiment-Analysis-App" target="_blank"><img src="assets/huggingface.ico.png" alt="huggingface.icon" tooltip="deployed model on huggingface"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="work-list">
-                    <div class="work">
-                        <img src="assets/texteditor.png" alt="">
-                        <div class="layer">
-                            <h3>Simple Text Editor Application</h3>
-                            <p>This is a simple Text Editor with basic text editing and file handling functionalities.
-                               <br>
-                                Visit My RMS repo on Github
-                            </p>
-                            <a href="https://github.com/Soorajalipanhwar/TextEditor.git" target="_blank"><img src="assets/Green Github.png" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="work-list">
-                    <div class="work">
-                        <img src="assets/storypage.png" alt="">
-                        <div class="layer">
-                            <h3>A simple website page</h3>
-                            <p>This is web page showing detailed information about my life <br>                               <br>
-                                Visit My story page ->
-                            </p>
-                            <a href="https://soorajalipanhwar.github.io/my_story/" target="_blank"><img src="assets/new web.png" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="work-list">
-                    <div class="work">
-                        <img src="assets/dino game.png" alt="">
-                        <div class="layer">
-                            <h3>A simple dino game in python</h3>
-                            <p>This is a fun game project in python. It is a basic implementation of google's dino game<br>                               <br>
-                                Visit My story page ->
-                            </p>
-                            <a href="https://github.com/Soorajalipanhwar/dino_game" target="_blank"><img src="assets/Green Github.png" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-                
+              </div>
             </div>
-            <div class="github">
-                <a class="btn" href="https://github.com/Soorajalipanhwar" target="_blank" onclick="showMessage()">Visit my GitHub Profile</a>
+
+            <div class="work-list">
+              <div class="work">
+                <img src="assets/RMS.jpeg" alt="" />
+                <div class="layer">
+                  <h3>Restaurant Management System</h3>
+                  <p>
+                    This is a C# project for restaurant management System with
+                    MS SQL Database. <br />
+                    Visit My RMS repo on Github
+                  </p>
+                  <a
+                    href="https://github.com/Soorajalipanhwar/Restaurant-Management-System.git"
+                    target="_blank"
+                    ><img src="assets/Green Github.png" alt=""
+                  /></a>
+                </div>
+              </div>
             </div>
+
+            <!-- <div class="work-list"> -->
+            <div class="work">
+              <img src="assets/page view.jpg  " alt="" />
+              <div class="layer">
+                <h4>Sentiment Analysis With Python and Flask</h4>
+                <p>
+                  My web app that performs the sentiment analysis on given text
+                  using python libraries <br />
+                </p>
+                <div class="links-holder">
+                  <a
+                    href="https://github.com/Soorajalipanhwar/Sentiment-Analysis-App-With-Python-Flask.git"
+                    target="_blank"
+                    ><img src="assets/Green Github.png" alt=""
+                  /></a>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a
+                    id="hug"
+                    href="https://huggingface.co/spaces/SoorajAliPanhwar/Simple-Sentiment-Analysis-App"
+                    target="_blank"
+                    ><img
+                      src="assets/huggingface.ico.png"
+                      alt="huggingface.icon"
+                      tooltip="deployed model on huggingface"
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <!-- </div> -->
+
+            <!-- <div class="work-list"> -->
+            <div class="work">
+              <img src="assets/texteditor.png" alt="" />
+              <div class="layer">
+                <h3>Simple Text Editor Application</h3>
+                <p>
+                  This is a simple Text Editor with basic text editing and file
+                  handling functionalities.
+                  <br />
+                  Visit My RMS repo on Github
+                </p>
+                <a
+                  href="https://github.com/Soorajalipanhwar/TextEditor.git"
+                  target="_blank"
+                  ><img src="assets/Green Github.png" alt=""
+                /></a>
+              </div>
+            </div>
+            <!-- </div> -->
+            <!-- <div class="work-list"> -->
+            <div class="work">
+              <img src="assets/storypage.png" alt="" />
+              <div class="layer">
+                <h3>A simple website page</h3>
+                <p>
+                  This is web page showing detailed information about my life
+                  <br />
+                  <br />
+                  Visit My story page ->
+                </p>
+                <a
+                  href="https://soorajalipanhwar.github.io/my_story/"
+                  target="_blank"
+                  ><img src="assets/new web.png" alt=""
+                /></a>
+              </div>
+            </div>
+            <!-- </div> -->
+            <!-- <div class="work-list"> -->
+            <div class="work">
+              <img src="assets/dino game.png" alt="" />
+              <div class="layer">
+                <h3>A simple dino game in python</h3>
+                <p>
+                  This is a fun game project in python. It is a basic
+                  implementation of google's dino game<br />
+                  <br />
+                  Visit My story page ->
+                </p>
+                <a
+                  href="https://github.com/Soorajalipanhwar/dino_game"
+                  target="_blank"
+                  ><img src="assets/Green Github.png" alt=""
+                /></a>
+              </div>
+            </div>
+            <!-- </div> -->
+          </div>
+          <div class="github">
+            <a
+              class="btn"
+              href="https://github.com/Soorajalipanhwar"
+              target="_blank"
+              onclick="showMessage()"
+              >Visit my GitHub Profile</a
+            >
+          </div>
         </div>
-    
-     </div>
-</section>
-<!-- ------------------------------contact--------------------------------------------------- -->
-<section id="contactpage" class="section">
-    <div id="contact-heading">
+      </div>
+    </section>
+    <!-- ------------------------------contact--------------------------------------------------- -->
+    <section id="contactpage" class="section">
+      <div id="contact-heading">
         <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact me</h1>
-                    <a href="mailto:sooraj.nthpsh.edu.pk" title="sooraj.nthpsh@ibacc.edu.pk"><img src="assets/red mail.png" alt="mail 1"> <span>Email-1:Sooraj Ali Panhwar</span></a><br>
-                    <a href="mailto:soorajalipanhwar007@gmail.com" title="soorajalipanhwar007@gmail.com"><img src="assets/red mail.png" alt="mail 2"> <span>Email-2:Sooraj Ali Panhwar</span></a><br>
-                    <a href="#"title="this is my contact number"><img src="assets/red phone.png" alt="cell no"> <span">Cell:+92 460889107</span></a><br>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Ex: sooraj" required>
-                        <input type="text" name="Email" placeholder="Ex: example@gmail" required>
-                        <textarea name="Message" rows="6" placeholder="write message" id=""></textarea>
-                        <button type="submit" class="btn btn-2">submit</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
+          <h1>Contact me</h1>
+          <div class="contact-main">
+            <div class="contact-left">
+              <p>Name</p>
+              <p>Email</p>
+              <p>Message</p>
             </div>
+            <div class="contact-right">
+              <form name="submit-to-google-sheet">
+                <input
+                  type="text"
+                  name="Name"
+                  placeholder="Ex: sooraj"
+                  required
+                />
+                <input
+                  type="text"
+                  name="Email"
+                  placeholder="Ex: example@gmail"
+                  required
+                />
+                <br />
+                <textarea
+                  name="Message"
+                  rows="6"
+                  placeholder="write message"
+                  id=""
+                ></textarea>
+                <button type="submit" class="btn btn-2">submit</button>
+              </form>
+              <span id="msg"></span>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+    <div class="copyRight">
+      Developed by
+      <strong style="color: greenyellow"> Sooraj Ali Panhwar</strong>
     </div>
-</section>
-    <div class="copyRight">Developed by <Strong style="color: greenyellow;"> Sooraj Ali Panhwar</Strong></div>
 
-<script>  //script for menu activity
-    var tablinks = document.getElementsByClassName('tab-links');
-    var tabcontents = document.getElementsByClassName('tab-contents');
+    <script>
+      // script for sidemenu
+      var sidemenu = document.getElementById("sidemenu");
+      const side = document.getElementsByClassName("sidemenu");
+      const icon = document.getElementById("openiconid");
+      function openmenu() {
+        sidemenu.style.left = "0";
+        // side.style.right = '0';
+        console.log(icon.id);
+        icon.style.display = "none";
+      }
+      function closemenu() {
+        sidemenu.style.left = "-200px";
+        icon.style.display = "flex";
+      }
+    </script>
 
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove('active-link');
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove('active-content');
-        }
-        event.currentTarget.classList.add('active-link');
-        document.getElementById(tabname).classList.add('active-content');
-    }
-</script>
+    <script>
+      //script for the copy function
+      function CopyText(text) {
+        navigator.clipboard
+          .writeText(text)
+          .then(() => {})
+          .catch((err) => {
+            console.error("Failed to copy text:", err);
+          });
+      }
+    </script>
 
-<script> // script for sidemenu
-   var sidemenu = document.getElementById('sidemenu');
-   const side = document.getElementsByClassName('sidemenu');
-   const icon = document.getElementById('openiconid');
-   function openmenu(){
-    sidemenu.style.left = '0';
-    // side.style.right = '0';
-    console.log(icon.id);
-    icon.style.display = 'none';
-    
-   }
-   function closemenu(){
-    sidemenu.style.left = '-200px'
-    icon.style.display = 'flex';
-   }
-</script>
+    <script>
+      // Function to observe sections and highlight the corresponding nav item
+      const sections = document.querySelectorAll("section");
+      const navItems = document.querySelectorAll(".nav-items");
+      var variable;
 
-<script> //script for the copy function
- function CopyText(text){
-        navigator.clipboard.writeText(text).then(() => {
-        }).catch(err => {
-    console.error("Failed to copy text:", err);
-  });
-  }
-</script>
-
-<script>// Function to observe sections and highlight the corresponding nav item
-    const sections = document.querySelectorAll('section');
-    const navItems = document.querySelectorAll('.nav-items');
-    var variable;
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            const id = entry.target.getAttribute('id');
-            variable = id.slice(0,-4);
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            const id = entry.target.getAttribute("id");
+            variable = id.slice(0, -4);
 
             const navItem = document.querySelector(`a[href="#${id}"]`);
-            
+
             // Check if the section is in view
             if (entry.isIntersecting) {
-                navItems.forEach((item) => {
-                    item.classList.remove('active-item');
-                });
-                navItem.classList.add('active-item');
-                document.getElementById('currentmenu').innerHTML = navItem.id;
+              navItems.forEach((item) => {
+                item.classList.remove("active-item");
+              });
+              navItem.classList.add("active-item");
+              document.getElementById("currentmenu").innerHTML = navItem.id;
             }
-        });
-    }, {
-        threshold: 0.7 // The section needs to be 70% visible to trigger
-    });
+          });
+        },
+        {
+          threshold: 0.7, // The section needs to be 70% visible to trigger
+        }
+      );
 
-    // Observe each section
-    sections.forEach(section => {
+      // Observe each section
+      sections.forEach((section) => {
         observer.observe(section);
-    });
-</script>
-
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxdoN8cJz73T3qaps78jTcmNvI8iXLerIaDHZswDh8xtotPNnlN1KFNiKGOOx02w6hg0w/exec'
-  const form = document.forms['submit-to-google-sheet']
-  const msg = document.getElementById('msg')
-
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-        msg.innerHTML = "Message Sent Successfully"
-        setTimeout(function (){
-            msg.innerHTML ="";
-        }, 5000)
       });
-      form.reset()
-      .catch(error => console.error('Error!', error.message))
-  });
-</script>
+    </script>
 
-</body>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxdoN8cJz73T3qaps78jTcmNvI8iXLerIaDHZswDh8xtotPNnlN1KFNiKGOOx02w6hg0w/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) }).then(
+          (response) => {
+            msg.innerHTML = "Message Sent Successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+          }
+        );
+        form.reset().catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
 </html>
