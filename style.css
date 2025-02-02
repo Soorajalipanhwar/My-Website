@@ -115,7 +115,14 @@ a {
   animation-delay: 1.3s;
 }
 .HomePage h1 {
-  font-size: 55px;
+  font-size: 4rem;
+  color: transparent;
+  background-image: radial-gradient(
+    circle,
+    var(--secondary-color),
+    var(--primary-color)
+  );
+  -webkit-background-clip: text;
 }
 .HomePage h2 {
   font-size: 32px;
@@ -753,7 +760,6 @@ form .btn-2 {
   color: var(--gray);
 }
 .cert-layer {
-  background-size: cover;
   width: 100%;
   height: 100%;
   border-radius: 20px;
@@ -889,8 +895,8 @@ form .btn-2 {
   .Skills .skills-holder {
     grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
     row-gap: 20px;
-    column-gap: 100px;
-    width: 90%;
+    column-gap: 4rem;
+    width: 85%;
   }
   .Skills .main {
     box-shadow: none;
@@ -903,7 +909,7 @@ form .btn-2 {
     font-size: 1rem;
   }
   .more-skills {
-    width: 90%;
+    width: 100%;
     grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
     row-gap: 0;
     column-gap: 35px;
@@ -929,18 +935,25 @@ form .btn-2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
-
+  #Google-h {
+    font-size: 1rem;
+  }
   .card {
     width: 8rem;
     height: 10rem;
+  }
+  .card p {
+    font-size: 0.8rem;
+  }
+  .card img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
   }
   .cv-btn-wrapper {
     display: flex;
     align-items: center;
     margin-top: 0;
-  }
-  .btn {
-    padding: 2px 60px;
   }
 
   .sub-title {
@@ -956,6 +969,9 @@ form .btn-2 {
   .about-col-2 {
     font-size: 14px;
   }
+  #about-text {
+    width: 100%;
+  }
   .about-col-2 #about-text {
     text-align: justify;
     margin-right: 50px;
@@ -966,6 +982,11 @@ form .btn-2 {
   #Portfolio .container {
     box-shadow: none;
   }
+  .btn {
+    padding: 10px 15px;
+    /* font-size: 0.5rem; */
+  }
+
   .contact-left {
     display: none;
   }
